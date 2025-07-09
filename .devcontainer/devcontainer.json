@@ -1,0 +1,20 @@
+{
+    "name": "Datathon Container",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "workspaceFolder": "/app",
+    "mounts": [
+        "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind",
+        "source=${localWorkspaceFolder}/notebooks,target=/workspace/notebooks,type=bind",
+        "source=${localWorkspaceFolder}/src,target=/workspace/src,type=bind"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "remoteUser": "root"
+}

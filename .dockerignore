@@ -1,0 +1,13 @@
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+.DS_Store
+.ipynb_checkpoints/
+.git
+.gitignore
+dockerfile
